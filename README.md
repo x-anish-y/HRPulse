@@ -2,7 +2,7 @@
 
 **HR PULSE** is a modern, full‑stack Human Resource Management System (HRMS) designed to streamline employee onboarding, attendance tracking, leave management, and salary administration through a secure, role‑based platform.
 
-Built with a focus on real‑world HR workflows, clean architecture, and premium UI/UX, HR PULSE delivers a production‑grade experience suitable for enterprise use cases and competitive hackathon demos.
+Built with a focus on real‑world HR workflows, clean architecture, and premium UI/UX, HR PULSE delivers a production‑grade experience suitable for enterprise use cases.
 
 ---
 
