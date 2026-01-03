@@ -1,8 +1,17 @@
 # 🚀 HRPULSE – Next‑Gen Human Resource Management System
 
-**HR PULSE** is a modern, full‑stack Human Resource Management System (HRMS) designed to streamline employee onboarding, attendance tracking, leave management, and salary administration through a secure, role‑based platform.
+**HRPULSE** is a modern, full‑stack Human Resource Management System (HRMS) designed to streamline employee onboarding, attendance tracking, leave management, and salary administration through a secure, role‑based platform.
 
 Built with a focus on real‑world HR workflows, clean architecture, and premium UI/UX, HR PULSE delivers a production‑grade experience suitable for enterprise use cases.
+
+## 👨‍💼 Team Details
+**Team Leader:**  
+- Jayaditya Saloi  
+
+**Team Members:**  
+- Aneesh Sawant  
+- Anish Sasmal  
+- Saish Raut  
 
 ---
 
