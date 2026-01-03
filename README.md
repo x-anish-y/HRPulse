@@ -1,73 +1,145 @@
-# Welcome to your Lovable project
+# 🚀 HRPULSE – Next‑Gen Human Resource Management System
 
-## Project info
+**HR PULSE** is a modern, full‑stack Human Resource Management System (HRMS) designed to streamline employee onboarding, attendance tracking, leave management, and salary administration through a secure, role‑based platform.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Built with a focus on real‑world HR workflows, clean architecture, and premium UI/UX, HR PULSE delivers a production‑grade experience suitable for enterprise use cases and competitive hackathon demos.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ✨ Key Highlights
 
-**Use Lovable**
+- 🔐 Secure authentication with role‑based access (Admin vs Employee)
+- 👥 Clear separation of privileges and UI flows
+- ⏱️ Real‑time attendance tracking (check‑in / check‑out)
+- 🗓️ Leave & time‑off management with approval workflow
+- 💰 Salary structure with auto‑calculated components
+- 🔑 Temporary credentials for new employees
+- 🔄 Forced password change on first login
+- 🎨 Modern, premium UI — impressive even before login
+- 🗄️ Supabase‑powered PostgreSQL database
+- 🚀 Fully functional end‑to‑end system (not a mockup)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🧠 Tech Stack
 
-**Use your preferred IDE**
+### Frontend
+- React (functional components + hooks)
+- React Router
+- Modern CSS (Tailwind / Styled Components)
+- Responsive, desktop‑first design
+- Smooth animations and micro‑interactions
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Backend
+- Node.js
+- Express‑style REST APIs
+- JWT‑based authentication
+- Role‑based authorization middleware
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Database
+- Supabase (PostgreSQL)
+- Managed relational database
+- Row Level Security (RLS)
+- Foreign keys, indexes, and constraints
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 👥 User Roles
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 🔑 Admin / HR
+- Create and manage employee accounts
+- Generate temporary credentials for new employees
+- View all employees and their attendance
+- Approve / reject leave requests
+- Configure salary structures
+- View payroll data
+- Full system access
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 👤 Employee
+- Cannot self‑register
+- Login using temporary credentials
+- Forced to change password on first login
+- Check‑in / check‑out attendance
+- Apply for leave
+- View salary in read‑only mode
+- Access only personal data
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## 🔐 Authentication & Security
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- JWT‑based authentication
+- Secure password hashing
+- Forced password change on first login
+- Server‑side role enforcement
+- Protected admin‑only routes
+- Supabase Row Level Security (RLS) for data protection
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🧾 Core Features
 
-## What technologies are used for this project?
+### 📊 Dashboard
+- **Admin**: employee grid, attendance status, pending approvals
+- **Employee**: attendance status, leave balance, quick actions
 
-This project is built with:
+### ⏱️ Attendance
+- One‑click check‑in / check‑out
+- Prevents invalid actions (double check‑in, invalid check‑out)
+- Monthly attendance view
+- Attendance feeds payroll logic
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### 🗓️ Time Off / Leave
+- Paid, Sick, and Unpaid leave types
+- Employee leave application with attachments
+- Admin approval / rejection workflow
+- Automatic leave balance updates
 
-## How can I deploy this project?
+### 💰 Salary & Payroll
+- Fixed wage (monthly / yearly)
+- Auto‑calculated components:
+  - Basic
+  - HRA
+  - Provident Fund
+  - Tax
+  - Allowances
+- Employee view is strictly read‑only
+- Payroll summary generation
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 🗄️ Database Schema (Core Tables)
 
-Yes, you can!
+- companies  
+- users  
+- roles  
+- employees  
+- attendance  
+- leave_requests  
+- leave_types  
+- salary_structures  
+- salary_components  
+- payroll  
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🧪 Demo Data Included
+
+The application comes preloaded with:
+- 1 Admin account
+- 8–10 Employee accounts
+- Temporary passwords for employees
+- Mixed attendance states
+- Pending leave requests
+- Predefined salary structures
+
+This allows instant demo and testing without manual setup.
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/hr-pulse.git
+cd hr-pulse
