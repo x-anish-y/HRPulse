@@ -62,7 +62,9 @@ Built with a focus on real‑world HR workflows, clean architecture, and premium
 - Approve / reject leave requests
 - Configure salary structures
 - View payroll data
-- Full system access
+- Full system access<br><br>
+![HRPULSE Architecture](public/Screenshot%202026-02-12%20233110.png)
+<br>
 
 ### 👤 Employee
 - Cannot self‑register
@@ -71,7 +73,8 @@ Built with a focus on real‑world HR workflows, clean architecture, and premium
 - Check‑in / check‑out attendance
 - Apply for leave
 - View salary in read‑only mode
-- Access only personal data
+- Access only personal data<br><br>
+![HRPULSE Architecture](public/Screenshot%202026-02-12%20233227.png)
 
 ---
 
