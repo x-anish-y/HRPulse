@@ -1,134 +1,218 @@
-# 🚀 HRPULSE – Next‑Gen Human Resource Management System
+# 🚀 HRPULSE  
+### Next-Generation Human Resource Management System (HRMS)
 
-**HRPULSE** is a modern, full‑stack Human Resource Management System (HRMS) designed to streamline employee onboarding, attendance tracking, leave management, and salary administration through a secure, role‑based platform.
+**HRPULSE** is a production-ready, full-stack Human Resource Management System designed to digitize and streamline modern HR workflows — including employee onboarding, attendance tracking, leave management, and payroll administration.
 
-Built with a focus on real‑world HR workflows, clean architecture, and premium UI/UX, HR PULSE delivers a production‑grade experience suitable for enterprise use cases.
+Built with secure role-based architecture, clean backend design, and premium UI/UX principles, HRPULSE delivers enterprise-grade functionality suitable for real-world deployment.
+
+---
 
 ## 👨‍💼 Team Details
-**Team Leader:**  
+
+**Team Leader**  
 - Jayaditya Saloi  
 
-**Team Members:**  
+**Team Members**  
 - Aneesh Sawant  
 - Anish Sasmal  
 - Saish Raut  
 
 ---
 
-## ✨ Key Highlights
+## 📌 Project Overview
 
-- 🔐 Secure authentication with role‑based access (Admin vs Employee)
-- 👥 Clear separation of privileges and UI flows
-- ⏱️ Real‑time attendance tracking (check‑in / check‑out)
-- 🗓️ Leave & time‑off management with approval workflow
-- 💰 Salary structure with auto‑calculated components
-- 🔑 Temporary credentials for new employees
-- 🔄 Forced password change on first login
-- 🎨 Modern, premium UI — impressive even before login
-- 🗄️ Supabase‑powered PostgreSQL database
-- 🚀 Fully functional end‑to‑end system (not a mockup)
+HRPULSE is architected as a role-segmented HR platform with:
+
+- Strict access control (Admin vs Employee)
+- Secure authentication & authorization
+- Structured payroll logic
+- Clean separation of business logic and UI
+- Database-level security enforcement
+
+The system reflects real HR operational flows rather than a conceptual demo.
 
 ---
 
-## 🧠 Tech Stack
+## ✨ Key Capabilities
+
+- 🔐 JWT-based authentication & role enforcement  
+- 👥 Privilege-based UI rendering  
+- ⏱️ Real-time attendance tracking (Check-in / Check-out)  
+- 🗓️ Leave management with approval workflow  
+- 💰 Structured salary computation engine  
+- 🔑 Temporary credentials for onboarding  
+- 🔄 Mandatory password reset on first login  
+- 🗄️ Supabase PostgreSQL with Row Level Security  
+- 🎨 Premium, responsive, enterprise-grade UI  
+
+---
+
+## 🧠 Technology Stack
 
 ### Frontend
-- React (functional components + hooks)
+- React (Functional Components + Hooks)
 - React Router
-- Modern CSS (Tailwind / Styled Components)
-- Responsive, desktop‑first design
-- Smooth animations and micro‑interactions
+- Tailwind CSS / Styled Components
+- Responsive desktop-first layout
+- Micro-interactions & smooth transitions
 
 ### Backend
 - Node.js
-- Express‑style REST APIs
-- JWT‑based authentication
-- Role‑based authorization middleware
+- Express-style REST APIs
+- JWT authentication middleware
+- Role-based authorization logic
+- Modular controller architecture
 
 ### Database
 - Supabase (PostgreSQL)
-- Managed relational database
+- Relational schema design
 - Row Level Security (RLS)
-- Foreign keys, indexes, and constraints
+- Foreign key constraints & indexing
 
 ---
 
-## 👥 User Roles
+## 👥 Role-Based System Architecture
 
 ### 🔑 Admin / HR
-- Create and manage employee accounts
-- Generate temporary credentials for new employees
-- View all employees and their attendance
-- Approve / reject leave requests
-- Configure salary structures
-- View payroll data
-- Full system access<br><br>
-![HRPULSE Architecture](public/Screenshot%202026-02-12%20233110.png)
+
+- Create and manage employee accounts  
+- Generate temporary login credentials  
+- Monitor organization-wide attendance  
+- Approve / reject leave requests  
+- Configure salary structures  
+- Access payroll summaries  
+- Full system privileges  
+
 <br>
 
+![HRPULSE Admin Architecture](public/Screenshot%202026-02-12%20233110.png)
+
+---
+
 ### 👤 Employee
-- Cannot self‑register
-- Login using temporary credentials
-- Forced to change password on first login
-- Check‑in / check‑out attendance
-- Apply for leave
-- View salary in read‑only mode
-- Access only personal data<br><br>
-![HRPULSE Architecture](public/Screenshot%202026-02-12%20233227.png)
+
+- Login via temporary credentials  
+- Forced password change at first login  
+- Check-in / Check-out attendance  
+- Apply for leave  
+- View salary (read-only mode)  
+- Access only personal data  
+
+<br>
+
+![HRPULSE Employee Architecture](public/Screenshot%202026-02-12%20233227.png)
 
 ---
 
-## 🔐 Authentication & Security
+## 🔐 Authentication & Security Architecture
 
-- JWT‑based authentication
-- Secure password hashing
-- Forced password change on first login
-- Server‑side role enforcement
-- Protected admin‑only routes
-- Supabase Row Level Security (RLS) for data protection
+- JWT-based session management  
+- Secure password hashing  
+- Server-side role enforcement  
+- Protected admin-only routes  
+- Supabase Row Level Security (RLS)  
+- Controlled API access patterns  
+
+Security is enforced at both application and database levels.
 
 ---
 
-## 🧾 Core Features
+## 🧾 Core Functional Modules
 
 ### 📊 Dashboard
-- **Admin**: employee grid, attendance status, pending approvals
-- **Employee**: attendance status, leave balance, quick actions
 
-### ⏱️ Attendance
-- One‑click check‑in / check‑out
-- Prevents invalid actions (double check‑in, invalid check‑out)
-- Monthly attendance view
-- Attendance feeds payroll logic
+**Admin View**
+- Employee directory
+- Live attendance indicators
+- Pending leave approvals
 
-### 🗓️ Time Off / Leave
-- Paid, Sick, and Unpaid leave types
-- Employee leave application with attachments
-- Admin approval / rejection workflow
-- Automatic leave balance updates
+**Employee View**
+- Attendance summary
+- Leave balance overview
+- Quick action shortcuts
 
-### 💰 Salary & Payroll
-- Fixed wage (monthly / yearly)
-- Auto‑calculated components:
-  - Basic
-  - HRA
-  - Provident Fund
-  - Tax
-  - Allowances
-- Employee view is strictly read‑only
-- Payroll summary generation
+---
+
+### ⏱️ Attendance Module
+
+- Single-click check-in / check-out  
+- Prevention of invalid state transitions  
+- Monthly attendance logs  
+- Direct integration with payroll computation  
+
+---
+
+### 🗓️ Leave Management
+
+- Leave categories: Paid, Sick, Unpaid  
+- Leave application with optional attachments  
+- Approval / rejection workflow  
+- Automated leave balance updates  
+
+---
+
+### 💰 Salary & Payroll Engine
+
+- Fixed monthly or yearly compensation  
+- Automated salary component breakdown:
+  - Basic Pay  
+  - HRA  
+  - Provident Fund  
+  - Tax  
+  - Allowances  
+
+- Read-only employee salary access  
+- Payroll summary generation  
+- Attendance-linked payroll logic  
 
 ---
 
 ## 🗄️ Database Schema (Core Tables)
 
-- companies  
-- users  
-- roles  
-- employees  
-- attendance  
-- leave_requests  
-- leave_types  
-- salary_structures  
-- salary_components  
-- payroll  
+- `companies`  
+- `users`  
+- `roles`  
+- `employees`  
+- `attendance`  
+- `leave_requests`  
+- `leave_types`  
+- `salary_structures`  
+- `salary_components`  
+- `payroll`  
+
+The schema enforces relational integrity through foreign keys, constraints, and indexed queries.
+
+---
+
+## 📈 System Design Principles
+
+- Clean separation of concerns  
+- Modular API structure  
+- Role-based UI rendering  
+- Database-level access enforcement  
+- Enterprise-ready scalability  
+
+---
+
+## 🎯 Learning & Engineering Outcomes
+
+This project demonstrates:
+
+- Secure full-stack authentication workflows  
+- Role-based access control implementation  
+- Relational database modeling  
+- Payroll logic design  
+- Real-world HR system architecture  
+- Production-style API development  
+
+---
+
+## 🌟 Vision
+
+HRPULSE aims to serve as a scalable digital backbone for modern HR operations — combining operational efficiency, security, and intuitive user experience into one unified platform.
+
+---
+
+## 📜 License
+
+This project is developed for academic and portfolio purposes and can be extended for enterprise deployment.
